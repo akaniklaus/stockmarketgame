@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:HTMLPanel ui:field="panel">
+		<span ui:field="symbolElement" />
+		<span ui:field="nameElement" />
+		<span ui:field="lastTradeDateTimeElement" />
+		<span ui:field="lastTradePriceElement" />
+		<span ui:field="priceChangeElement" />
+		<span ui:field="priceChangeInPercentElement" />
+		<g:Button ui:field="addButton">+</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder>

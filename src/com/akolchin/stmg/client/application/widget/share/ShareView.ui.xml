@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:HTMLPanel ui:field="panel">
+
+		<span ui:field="symbolElement" />
+		<b>last price: </b>
+		<span ui:field="lastTradePriceElement" />
+		<b> || </b>
+		<b>shares: </b>
+		<span ui:field="sharesElement" />
+		<b>ratio: </b>
+		<span ui:field="ratioElement" />
+
+		<g:Button ui:field="buyButton">Buy</g:Button>
+		<g:Button ui:field="sellButton">Sell</g:Button>
+
+		<g:Button ui:field="deleteButton">-</g:Button>
+
+		<g:SimplePanel ui:field="tradePanel" />
+	</g:HTMLPanel>
+</ui:UiBinder>

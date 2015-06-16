@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>Project</display-name>
+
+	<welcome-file-list>
+
+		<!-- welcome-file>index.jsp</welcome-file -->
+		<welcome-file>Project.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<exception-type>facebook4j.FacebookException</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+
+
+
+	<filter>
+		<filter-name>guiceFilter</filter-name>
+		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>com.akolchin.stmg.server.guice.GuiceServletConfig</listener-class>
+	</listener>
+
+	<!-- GAE studio -->
+
+	<!-- https://arcbees.atlassian.net/wiki/display/GS/Getting+started -->
+	<context-param>
+		<param-name>resteasy.servlet.mapping.prefix</param-name>
+		<param-value>/rest</param-value>
+	</context-param>
+
+	<!-- https://arcbees.atlassian.net/wiki/display/GS/Google+App+Engine+production+integration 
+		<security-constraint> <web-resource-collection> <web-resource-name>admin</web-resource-name> 
+		<url-pattern>/gae-studio-admin/*</url-pattern> </web-resource-collection> 
+		<auth-constraint> <role-name>admin</role-name> </auth-constraint> </security-constraint> -->
+
+	<!-- GAE studio -->
+
+</web-app>

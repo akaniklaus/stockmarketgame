@@ -1,0 +1,15 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<span ui:field="nameElement" />
+		<b>cash:</b>
+		<span ui:field="cashElement" />
+		<b>portfolio value:</b>
+		<span ui:field="valueElement" />
+		<b>return:</b>
+		<span ui:field="returnPctElement" />
+	</g:HTMLPanel>
+</ui:UiBinder>

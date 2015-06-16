@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<h2>Affiliates:</h2>
+		<g:HTMLPanel ui:field="affiliatesPanel" />
+
+		<h3>Invites:</h3>
+		<g:Button ui:field="inviteButton">Invite...</g:Button>
+		<g:HTMLPanel ui:field="invitesPanel" />
+
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,8 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel ui:field="panel">
+    	<span ui:field="nameElement" />
+    	<g:Button ui:field="reinviteButton" enabled="false">reinvite</g:Button>
+    	<g:Button ui:field="deleteButton">-</g:Button>
+    </g:HTMLPanel>
+</ui:UiBinder>

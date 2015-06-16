@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:PopupPanel autoHideOnHistoryEventsEnabled="true"
+		autoHideEnabled="true" modal="true" glassEnabled="true">
+		<g:HTMLPanel ui:field="mainPanel">
+			<g:ListBox ui:field="friendsListBox" visible="false"/>
+			<g:Button ui:field="inviteButton" enabled="false" text="Select Friend to Invite"/>
+		</g:HTMLPanel>
+	</g:PopupPanel>
+</ui:UiBinder>

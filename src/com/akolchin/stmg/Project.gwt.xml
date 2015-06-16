@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='project'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<!-- <inherits name='com.google.gwt.inject.Inject'/> -->
+	
+	<inherits name="com.googlecode.objectify.Objectify" />
+
+	<!-- Default css -->
+	<inherits name='com.google.gwt.user.theme.clean.CleanResources' />
+
+	<!-- GWTP -->
+	<inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
+	<inherits name='com.gwtplatform.dispatch.Dispatch' />
+
+	<!-- Request factory -->
+	<inherits name='com.google.web.bindery.requestfactory.RequestFactory' />
+
+	<source path='client' />
+	<source path='shared' />
+
+	<!-- Default client module -->
+	<set-configuration-property name="gin.ginjector.modules"
+		value="com.akolchin.stmg.client.gin.ClientModule" />
+
+	<!-- Bootstrapper -->
+	<set-configuration-property name="gwtp.bootstrapper"
+		value="com.akolchin.stmg.client.gin.BootstrapperImpl" />
+
+</module>
